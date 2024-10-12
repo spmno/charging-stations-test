@@ -1,0 +1,5 @@
+export DATABASE_URL='sqlite://charging_stations.sqlite?mode=rwc'
+
+sea-orm-cli migrate up
+
+sea-orm-cli generate entity -o entity/src
